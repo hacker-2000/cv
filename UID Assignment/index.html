@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<LINK REL="STYLESHEET" HREF="style.css">
+		<META CHARSET="UTF-8">
+		<SCRIPT SRC="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></SCRIPT>
+		<SCRIPT SRC="script.js"></SCRIPT>
+	</HEAD>
+	<BODY>
+		<MAIN>
+			<SECTION ID="q1a">
+				<LABEL FOR="favcities">Please name the cities you like:</LABEL><BR>
+				<TEXTAREA ID="favcities" ROWS=2>London&#13;&#10;Paris&#13;&#10;New York
+				</TEXTAREA>
+			</SECTION>
+			<SECTION ID="q1b">
+				<DIV ID="btnholder">
+					<P>Choose your favorite dish: </P>
+					<INPUT TYPE="RADIO" VALUE="kebab" NAME="favfood"><LABEL FOR="kebab"> Kebab</LABEL><BR>
+					<INPUT TYPE="RADIO" VALUE="curry" NAME="favfood"><LABEL FOR="curry"> Curry</LABEL><BR>
+					<INPUT TYPE="RADIO" VALUE="pizza" NAME="favfood"><LABEL FOR="pizza"> Pizza</LABEL><BR>
+				</DIV>
+				<DIV ID="imgholder"></DIV>
+			</SECTION>
+			<SECTION ID="q1c">
+				<FIELDSET>
+					<LEGEND>Please enter your address:</LEGEND>
+					<LABEL FOR="country">Please choose a country: </LABEL>
+					<SELECT ID="country">
+					</SELECT><BR><BR>
+					<LABEL FOR="state">Please choose a state: </LABEL>
+					<SELECT ID="state">
+					</SELECT><BR><BR>
+					<LABEL FOR="city">Please choose a city: </LABEL>
+					<SELECT ID="city">
+					</SELECT>
+				</FIELDSET>
+			</SECTION>
+			<SECTION ID="q1d">
+				<BUTTON TITLE="This button does nothing. It's just to demonstrate the usage of tooltips.">Hover over me!</BUTTON>
+			</SECTION>
+			<SECTION ID="q1e">
+				<DIV>
+					<LABEL FOR="nstars">Please enter the number of stars: </LABEL>
+					<INPUT TYPE="TEXT" ID="nstars">
+				</DIV>
+				<DIV ID="outer-starholder">
+					<DIV ID="inner-starholder"></DIV>
+				</DIV>
+			</SECTION>
+            <input type="color" name="">
+		</MAIN>
+	</BODY>
+</HTML>

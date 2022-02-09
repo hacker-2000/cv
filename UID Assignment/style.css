@@ -1,0 +1,148 @@
+/*	Note: Scrollbars have not been styled because their styling varies from browser to browser	*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+textarea {
+	padding: 5px;
+	resize: none;
+	overflow-y: scroll;
+	width: 90%;
+	white-space: pre-line;
+	background: #000133;
+	color: #00f9ea;
+	border-color: #005249;
+	font-family: Arial;
+	font-size: 10pt;
+	border-radius: 5px;
+}
+
+body {
+	background: url('img/bg.jpg');
+	position: relative;
+	display: grid;
+	padding: 0;
+	margin: 0;
+	min-height: 100vh;
+	grid-template-rows: auto;
+	grid-template-columns: 10vw 80vw 10vw;
+	font-family: Jost, sans-serif;
+}
+
+main {
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 50px 100px;
+	align-items: stretch;
+	background: rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 0 20px 0 #000 inset, -5px 0 20px 0 #000 inset;
+}
+
+section {
+	background: rgba(0, 0, 0, 0.57);
+	padding: 25px 35px;
+	border-radius: 25px;
+	margin: 25px 0;
+	position: relative;
+	border: 1px solid #111;
+}
+
+#q1a {
+	color: #04d9ff;
+	box-shadow: 0 0 25px 0 #000 inset, 0 0 10px 2px #04d9ff inset;
+}
+
+#q1b {
+	color: #f29e8e;
+	box-shadow: 0 0 25px 0 #000 inset, 0 0 10px 2px #f29e8e inset;
+}
+
+#q1c {
+	color: #7efbb3;
+	box-shadow: 0 0 25px 0 #000 inset, 0 0 10px 2px #7efbb3 inset;
+}
+
+#q1d {
+	color: #fe83cc;
+	box-shadow: 0 0 25px 0 #000 inset, 0 0 10px 2px #fe83cc inset;
+	text-align: center;
+}
+
+#q1e {
+	color: #0d75f8;
+	box-shadow: 0 0 25px 0 #000 inset, 0 0 10px 2px #0d75f8 inset;
+}
+
+#q1b, #q1e {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#q1b div {
+	width: 400px;
+	height: 400px;
+}
+
+#imgholder {
+	padding: 0;
+}
+
+#imgholder img {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border-radius: 20px;
+}
+
+#outer-starholder {
+	display: inline-block;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+#inner-starholder {
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#inner-starholder::before {
+	content: "\2605 \2605 \2605 \2605 \2605";
+	color: #09f1c6;
+	font-size: 20pt;
+}
+
+#outer-starholder::before {
+	content: "\2605 \2605 \2605 \2605 \2605";
+	color: #01386a;
+	font-size: 20pt;
+}
+
+select {
+	background: #002d04;
+	color: #75fd63;
+	border-color: #019529;
+}
+
+button {
+	padding: 15px;
+	cursor: pointer;
+	color: #3d0734;
+	background: linear-gradient(180deg, #fe2c54 0%, #fe2c54 10%, #fc5a50 90%, #fc5a50 100%);
+	border: 3px groove #ff073a;
+	font-size: 24pt;
+	border-radius: 10px;
+}
+
+input[type="text"] {
+	background-color: #020035;
+	color: #7bc8f6;
+	border-color: #011288;
+}
